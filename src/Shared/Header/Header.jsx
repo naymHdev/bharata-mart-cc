@@ -9,6 +9,7 @@ import { IoIosHelpCircleOutline } from "react-icons/io";
 import { TiMessages } from "react-icons/ti";
 import { HiOutlineUserCircle } from "react-icons/hi2";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import InputSearch from "./InputSearch";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -23,15 +24,20 @@ export default function Header() {
         className="mx-auto flex max-w-7xl items-center justify-between py-2 lg:px-8"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <Link to="/">
-              <h3 className=" text-2xl font-extrabold text-slate-50">
-                indiamart
-              </h3>
-            </Link>
-          </a>
+        <div className="flex items-center lg:flex-1">
+          <div>
+            <a href="#" className="-m-1.5 p-1.5">
+              <span className="sr-only">Your Company</span>
+              <Link to="/">
+                <h3 className=" text-2xl font-extrabold text-slate-50">
+                  indiamart
+                </h3>
+              </Link>
+            </a>
+          </div>
+          <div className="px-5">
+            <InputSearch />
+          </div>
         </div>
         <div className="flex lg:hidden">
           <button
