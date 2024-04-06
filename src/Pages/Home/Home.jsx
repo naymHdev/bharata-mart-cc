@@ -1,7 +1,11 @@
+import MenuBar from "./MenuBar";
+
 const Home = () => {
   return (
     <>
-      <div></div>
+      <div>
+        <MenuBar />
+      </div>
     </>
   );
 };

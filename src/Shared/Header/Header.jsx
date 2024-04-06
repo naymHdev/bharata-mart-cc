@@ -19,7 +19,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[#2E3192] text-slate-50">
+    <header className="bg-[#2E3192] text-slate-50 w-full sticky top-0 z-50">
       <nav
         className="mx-auto flex w-full items-center justify-between lg:px-8"
         aria-label="Global"
@@ -51,28 +51,25 @@ export default function Header() {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-8 justify-end">
           <Link
-            href="#"
+            to="/shopping"
             className="text-sm items-center flex flex-col font-sans leading-6 text-slat-50"
           >
             <CiShoppingTag className=" text-2xl" />
             Shopping
           </Link>
           <Link
-            href="#"
             className=" text-sm items-center flex flex-col font-sans leading-6 text-slat-50"
           >
             <BsShop className=" text-2xl" />
             Sell
           </Link>
           <Link
-            href="#"
             className=" text-sm items-center flex flex-col font-sans leading-6 text-slat-50"
           >
             <IoIosHelpCircleOutline className=" text-2xl" />
             Help
           </Link>
           <Link
-            href="#"
             className=" text-sm items-center flex flex-col font-sans leading-6 text-slat-50"
           >
             <TiMessages className=" text-2xl" />
@@ -80,7 +77,6 @@ export default function Header() {
           </Link>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <Link
-              href="#"
               className="font-sans leading-6 text-slat-50 flex flex-col items-center"
             >
               <div>
